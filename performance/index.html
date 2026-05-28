@@ -1,24 +1,183 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Performance</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance | Braden Rosciszewski</title>
+
   <link rel="stylesheet" href="/style.css">
+
+  <style>
+
+    body {
+      background: #050505;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(75,48,132,0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(164,99,72,0.18), transparent 35%),
+        #050505;
+    }
+
+    .accent {
+      color: #a46348;
+    }
+
+    .btn-primary {
+      background: #4b3084;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #a46348;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #a46348;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid rgba(164,99,72,0.18);
+    }
+
+    .card:hover {
+      border-color: #a46348;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .media-card {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 24px;
+    }
+
+    .media-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
+
+    .media-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <div class="container">
-    <h1>Performance</h1>
-    <p>Acting, film, and creative expression.</p>
 
-    <h2>Reel</h2>
-    <p>[Embed video here later]</p>
+  <section class="hero">
+    <div class="container hero-content">
 
-    <h2>Gallery</h2>
-    <p>[Photos coming soon]</p>
+      <div class="hero-text">
 
-    <h2>Resume</h2>
-    <p>[Credits and experience]</p>
+        <h1>
+          Creative<br>
+          <span class="accent">Performance</span>
+        </h1>
 
-    <a href="/" class="btn">Back Home</a>
-  </div>
+        <p>
+          Acting, storytelling, film, and performance-driven creative work
+          focused on emotional depth and cinematic expression.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#portfolio" class="btn btn-primary">
+            View Portfolio
+          </a>
+
+          <a href="/" class="btn btn-secondary">
+            Back Home
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="/images/headshot.jpg" alt="Braden Rosciszewski">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Portfolio
+      </h2>
+
+      <div class="media-grid">
+
+        <div class="media-card">
+
+          <h3>Acting Reel</h3>
+
+          <p>
+            Showcase your featured scenes, monologues,
+            commercial work, or cinematic reel here.
+          </p>
+
+        </div>
+
+        <div class="media-card">
+
+          <h3>Headshots</h3>
+
+          <p>
+            Add professional headshots and editorial photography
+            to build your visual portfolio.
+          </p>
+
+        </div>
+
+        <div class="media-card">
+
+          <h3>Resume</h3>
+
+          <p>
+            Include film credits, theater work,
+            training, representation, and performance experience.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Braden Rosciszewski
+    </div>
+  </footer>
+
 </body>
 </html>
+```
