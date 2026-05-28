@@ -1,43 +1,215 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Training</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training | Braden Rosciszewski</title>
+
   <link rel="stylesheet" href="/style.css">
+
+  <style>
+
+    body {
+      background: #050505;
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(114,204,255,0.08), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(255,49,49,0.08), transparent 35%),
+        #050505;
+    }
+
+    .accent {
+      color: #72ccff;
+    }
+
+    .btn-primary {
+      background: #72ccff;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #ff3131;
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #72ccff;
+    }
+
+    .card {
+      background: #000d4f;
+      border: 1px solid rgba(114,204,255,0.15);
+    }
+
+    .card:hover {
+      border-color: #72ccff;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .pricing-card {
+      background: #0b0b0b;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 40px;
+    }
+
+    .pricing-card h3 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 2.5rem;
+      color: #72ccff;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .pricing-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <div class="container">
-    <h1>Personal Training</h1>
-    <p>Results-driven coaching built around your goals.</p>
 
-    <h2>Training Options</h2>
+  <section class="hero">
+    <div class="container hero-content">
 
-<div class="grid">
+      <div class="hero-text">
 
-  <div class="card">
-    <h2>Consultation</h2>
-    <p>Discuss goals, training strategy, and next steps.</p>
-    <a href="YOUR_CONSULTATION_LINK" class="btn">
-      Book Consultation
-    </a>
-  </div>
+        <h1>
+          Elite<br>
+          <span class="accent">Training</span>
+        </h1>
 
-  <div class="card">
-    <h2>60 Minute 1-on-1 Session</h2>
-    <p>Private training focused on strength and performance.</p>
-    <a href="https://buy.stripe.com/eVqcN7fCV0Zd7k125J3AY00" class="btn">
-      Purchase Session
-    </a>
-  </div>
+        <p>
+          Strength, conditioning, accountability, and performance coaching
+          built around discipline and long-term transformation.
+        </p>
 
-  <div class="card">
-    <h2>Monthly Coaching</h2>
-    <p>Programming, accountability, and ongoing support.</p>
-    <a href="YOUR_MONTHLY_STRIPE_LINK" class="btn">
-      Start Coaching
-    </a>
-  </div>
+        <div class="hero-buttons">
 
-</div>
+          <a href="#pricing" class="btn btn-primary">
+            Start Training
+          </a>
+
+          <a href="/" class="btn btn-secondary">
+            Back Home
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="/images/headshot.jpg" alt="Braden Rosciszewski">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Training Options
+      </h2>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+
+          <h3>Consultation</h3>
+
+          <div class="price">
+            $25
+          </div>
+
+          <p>
+            Discuss goals, training approach, current fitness level,
+            and build a strategy for long-term success.
+          </p>
+
+          <a href="PASTE_CALENDLY_LINK_HERE" class="btn btn-primary">
+            Book Consultation
+          </a>
+
+        </div>
+
+        <div class="pricing-card">
+
+          <h3>1-on-1 Session</h3>
+
+          <div class="price">
+            $75
+          </div>
+
+          <p>
+            Personalized coaching session focused on movement,
+            strength, conditioning, and performance.
+          </p>
+
+          <a href="PASTE_STRIPE_LINK_HERE" class="btn btn-primary">
+            Purchase Session
+          </a>
+
+        </div>
+
+        <div class="pricing-card">
+
+          <h3>Monthly Coaching</h3>
+
+          <div class="price">
+            $299
+          </div>
+
+          <p>
+            Ongoing programming, accountability,
+            coaching support, and progress tracking.
+          </p>
+
+          <a href="PASTE_MONTHLY_STRIPE_LINK_HERE" class="btn btn-primary">
+            Start Coaching
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Braden Rosciszewski
+    </div>
+  </footer>
 
 </body>
 </html>
+```
