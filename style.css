@@ -10,10 +10,7 @@ html {
 }
 
 body {
-  background-image: images/asphalt.jpg; /* Path to your texture image */
-    background-repeat: repeat;           /* Tile the texture */
-    background-size: auto;               /* Keep original size */
-    background-color: #050505;            /* Fallback color */
+  background-color: #050505;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   overflow-x: hidden;
