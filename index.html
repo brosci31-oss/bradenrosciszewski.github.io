@@ -15,29 +15,31 @@
       color: white;
     }
 
-    /* HERO — WHITE + CHAMPAGNE, MATCHED RADIAL SIZE */
+    /* HERO — CHAMPAGNE + CFDEF7, MATCHED RADIAL SIZE */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       background:
-        radial-gradient(circle farthest-corner at top left, rgba(255,255,255,0.22), transparent 40%),
-        radial-gradient(circle farthest-corner at bottom right, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at top left, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(207,222,247,0.22), transparent 40%),
         #0a0a0a;
     }
 
-    /* CHAMPAGNE LAST NAME */
+    /* NAME ACCENT — CFDEF7 */
     .accent {
-      color: #F7E7CE;
+      color: #CFDEF7;
     }
 
+    /* UNIFIED BUTTON SYSTEM */
     .btn-primary {
-      background: #F7E7CE;
-      color: black;
+      background: #111;        /* neutral base */
+      color: white;
+      border: 1px solid rgba(255,255,255,0.15);
     }
 
     .btn-primary:hover {
-      background: white;
+      background: #CFDEF7;     /* icy blue hover for home */
       color: black;
     }
 
@@ -47,29 +49,31 @@
     }
 
     .btn-secondary:hover {
-      border-color: #F7E7CE;
+      border-color: #CFDEF7;
     }
 
+    /* SOCIAL ICON HOVER */
     .icon-btn:hover {
-      background: #F7E7CE;
-      border-color: #F7E7CE;
+      background: #CFDEF7;
+      border-color: #CFDEF7;
     }
 
+    /* CARD STYLING */
     .card {
       background: #111;
       border: 1px solid rgba(255,255,255,0.08);
     }
 
     .card:hover {
-      border-color: #F7E7CE;
+      border-color: #CFDEF7;
     }
 
-    /* SECTION — MIRRORED WHITE + CHAMPAGNE */
+    /* SECTION — MIRRORED CHAMPAGNE + CFDEF7 */
     .section {
       padding: 120px 0;
       background:
-        radial-gradient(circle farthest-corner at top right, rgba(247,231,206,0.22), transparent 40%),
-        radial-gradient(circle farthest-corner at bottom left, rgba(255,255,255,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at top right, rgba(207,222,247,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(247,231,206,0.22), transparent 40%),
         #0a0a0a;
     }
 
@@ -183,4 +187,5 @@
 
 </body>
 </html>
+
 
