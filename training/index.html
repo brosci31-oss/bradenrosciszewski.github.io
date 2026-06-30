@@ -15,14 +15,14 @@
       color: white;
     }
 
-    /* LIGHTER HERO BACKGROUND */
+    /* HERO WITH MATCHED RADIAL GRADIENT SIZE */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       background:
-        radial-gradient(circle at top left, rgba(114,204,255,0.08), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(255,49,49,0.08), transparent 35%),
+        radial-gradient(circle farthest-corner at top left, rgba(114,204,255,0.08), transparent 35%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(255,49,49,0.08), transparent 35%),
         #0a0a0a;
     }
 
@@ -66,7 +66,7 @@
     }
 
     .pricing-card {
-      background: #111111; /* slightly lighter than #0b0b0b */
+      background: #111111;
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 18px;
       padding: 40px;
@@ -90,12 +90,12 @@
       margin-bottom: 30px;
     }
 
-    /* ⭐ LIGHTER DARK MODE + PAGE-SPECIFIC ZIG-ZAG GRADIENT */
+    /* ⭐ MATCHED RADIAL GRADIENT SIZE FOR SECTION */
     .section {
       padding: 120px 0;
       background:
-        radial-gradient(circle at top right, rgba(255,49,49,0.10), transparent 40%),
-        radial-gradient(circle at bottom left, rgba(114,204,255,0.10), transparent 40%),
+        radial-gradient(circle farthest-corner at top right, rgba(255,49,49,0.10), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(114,204,255,0.10), transparent 40%),
         #0a0a0a;
     }
 
@@ -217,4 +217,3 @@
 
 </body>
 </html>
-
