@@ -15,7 +15,7 @@
       color: white;
     }
 
-    /* HERO — CHAMPAGNE + MOSS, MATCHED RADIAL SIZE */
+    /* HERO — CHAMPAGNE TOP LEFT, MOSS BOTTOM RIGHT */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -31,54 +31,12 @@
       color: #6A7F5F;
     }
 
-    /* UNIFIED BUTTON SYSTEM (RESTORED) */
-    .btn-primary {
-      background: #111;
-      color: white;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-
-    /* TRAINING BUTTON HOVER — RED */
-    .btn-primary[href="/training"]:hover {
-      background: #ff3131;
-      color: white;
-    }
-
-    /* PERFORMANCE BUTTON HOVER — ORANGE */
-    .btn-primary[href="/performance"]:hover,
-    .btn-secondary[href="/performance"]:hover {
-      background: #a46348;
-      color: white;
-      border-color: #a46348;
-    }
-
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.15);
-      color: white;
-    }
-
-    /* SOCIAL ICON HOVER — MOSS */
-    .icon-btn:hover {
-      background: #6A7F5F;
-      border-color: #6A7F5F;
-    }
-
-    /* CARD STYLING */
-    .card {
-      background: #111;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .card:hover {
-      border-color: #6A7F5F;
-    }
-
-    /* SECTION — MIRRORED CHAMPAGNE + MOSS (SEAM FIXED) */
+    /* SECTION — MOSS TOP RIGHT, CHAMPAGNE BOTTOM LEFT */
     .section {
       padding: 120px 0;
       background:
-        radial-gradient(circle farthest-corner at top right, rgba(247,231,206,0.22), transparent 40%),
-        radial-gradient(circle farthest-corner at bottom left, rgba(106,127,95,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at top right, rgba(106,127,95,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(247,231,206,0.22), transparent 40%),
         #0a0a0a;
     }
 
@@ -102,11 +60,11 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="/training" class="btn-primary">
+          <a href="/training" class="btn btn-primary">
             Personal Training
           </a>
 
-          <a href="/performance" class="btn-primary">
+          <a href="/performance" class="btn btn-secondary">
             Performance
           </a>
         </div>
@@ -192,4 +150,5 @@
 
 </body>
 </html>
+
 
