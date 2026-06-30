@@ -6,7 +6,76 @@
   <title>Braden Rosciszewski</title>
 
   <link rel="stylesheet" href="/style.css">
+
+  <style>
+
+    /* LIGHTER DARK MODE BASE */
+    body {
+      background: #0a0a0a;
+      color: white;
+    }
+
+    /* HERO — WHITE + GOLD, MATCHED RADIAL SIZE */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle farthest-corner at top left, rgba(255,255,255,0.20), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(212,175,55,0.20), transparent 40%),
+        #0a0a0a;
+    }
+
+    /* GOLD LAST NAME */
+    .accent {
+      color: #d4af37;
+    }
+
+    .btn-primary {
+      background: #d4af37;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: white;
+      color: black;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #d4af37;
+    }
+
+    .icon-btn:hover {
+      background: #d4af37;
+      border-color: #d4af37;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card:hover {
+      border-color: #d4af37;
+    }
+
+    /* SECTION — MIRRORED WHITE + GOLD */
+    .section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top right, rgba(212,175,55,0.20), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(255,255,255,0.20), transparent 40%),
+        #0a0a0a;
+    }
+
+  </style>
 </head>
+
 <body>
 
   <section class="hero">
@@ -38,40 +107,40 @@
         <img src="/images/headshot.jpg" alt="Braden Rosciszewski">
       </div>
 
-<div class="social-icons">
+      <div class="social-icons">
 
-  <!-- Email -->
-  <a href="mailto:bradenrosciszewski@gmail.com" class="icon-btn" aria-label="Email">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-      <path d="M4 4h16v16H4V4zm0 0l8 8 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
+        <!-- Email -->
+        <a href="mailto:bradenrosciszewski@gmail.com" class="icon-btn" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h16v16H4V4zm0 0l8 8 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
 
-  <!-- Text Message -->
-  <a href="sms:4404884165" class="icon-btn" aria-label="Text">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-      <path d="M4 4h16v12H7l-3 3V4z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
+        <!-- Text Message -->
+        <a href="sms:4404884165" class="icon-btn" aria-label="Text">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4h16v12H7l-3 3V4z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
 
-  <!-- Instagram -->
-  <a href="https://instagram.com/bradenrosciszewski" class="icon-btn" target="_blank" aria-label="Instagram">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-      <rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="2"/>
-      <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/>
-      <circle cx="17" cy="7" r="1.2" fill="white"/>
-    </svg>
-  </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/bradenrosciszewski" class="icon-btn" target="_blank" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="5" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/>
+            <circle cx="17" cy="7" r="1.2" fill="white"/>
+          </svg>
+        </a>
 
-  <!-- YouTube -->
-  <a href="https://youtube.com/@bradenrosciszewski" class="icon-btn" target="_blank" aria-label="YouTube">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-      <path d="M22 12s0-4-1-6c-.5-1-1.5-1.5-2.5-1.6C16 4 12 4 12 4s-4 0-6.5.4C4.5 4.5 3.5 5 3 6c-1 2-1 6-1 6s0 4 1 6c.5 1 1.5 1.5 2.5 1.6C8 20 12 20 12 20s4 0 6.5-.4c1-.1 2-.6 2.5-1.6 1-2 1-6 1-6z" stroke="white" stroke-width="2"/>
-      <path d="M10 9l6 3-6 3V9z" fill="white"/>
-    </svg>
-  </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/@bradenrosciszewski" class="icon-btn" target="_blank" aria-label="YouTube">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path d="M22 12s0-4-1-6c-.5-1-1.5-1.5-2.5-1.6C16 4 12 4 12 4s-4 0-6.5.4C4.5 4.5 3.5 5 3 6c-1 2-1 6-1 6s0 4 1 6c.5 1 1.5 1.5 2.5 1.6C8 20 12 20 12 20s4 0 6.5-.4c1-.1 2-.6 2.5-1.6 1-2 1-6 1-6z" stroke="white" stroke-width="2"/>
+            <path d="M10 9l6 3-6 3V9z" fill="white"/>
+          </svg>
+        </a>
 
-</div>
+      </div>
 
     </div>
   </section>
@@ -87,7 +156,6 @@
 
         <a href="/training" class="card">
           <h2>Training</h2>
-
           <p>
             Strength coaching, body transformation,
             performance development, and accountability.
@@ -96,7 +164,6 @@
 
         <a href="/performance" class="card">
           <h2>Performance</h2>
-
           <p>
             Acting, media work, creative projects,
             and performance-driven storytelling.
@@ -113,5 +180,6 @@
       © 2026 Braden Rosciszewski
     </div>
   </footer>
+
 </body>
 </html>
