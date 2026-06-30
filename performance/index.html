@@ -9,19 +9,21 @@
 
   <style>
 
+    /* LIGHTER DARK MODE BASE */
     body {
-      background: #050505;
+      background: #0a0a0a;
       color: white;
     }
 
+    /* HERO WITH MATCHED RADIAL GRADIENT SIZE */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       background:
-        radial-gradient(circle at top left, rgba(75,48,132,0.18), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(164,99,72,0.18), transparent 35%),
-        #050505;
+        radial-gradient(circle farthest-corner at top left, rgba(75,48,132,0.18), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(164,99,72,0.18), transparent 40%),
+        #0a0a0a;
     }
 
     .accent {
@@ -80,6 +82,15 @@
       line-height: 1.7;
     }
 
+    /* ⭐ MATCHED RADIAL GRADIENT SIZE FOR SECTION */
+    .section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top right, rgba(164,99,72,0.18), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(75,48,132,0.18), transparent 40%),
+        #0a0a0a;
+    }
+
   </style>
 
 </head>
@@ -133,42 +144,33 @@
       <div class="media-grid">
 
         <div class="media-card">
-
           <h3>Acting Reel</h3>
-
           <p>
             Showcase your featured scenes, monologues,
             commercial work, or cinematic reel here.
           </p>
-
           <a href="/performance/reel.html" class="btn btn-primary">
             View Reel
           </a>
         </div>
 
         <div class="media-card">
-
           <h3>Headshots</h3>
-
           <p>
             Add professional headshots and editorial photography
             to build your visual portfolio.
           </p>
-
           <a href="/performance/headshots.html" class="btn btn-primary">
             View Headshots
           </a>
         </div>
 
         <div class="media-card">
-
           <h3>Resume</h3>
-
           <p>
             Include film credits, theatre work,
             training, representation, and performance experience.
           </p>
-
           <a href="/performance/resume.html" class="btn btn-primary">
             View Resume
           </a>
@@ -188,3 +190,4 @@
 
 </body>
 </html>
+
