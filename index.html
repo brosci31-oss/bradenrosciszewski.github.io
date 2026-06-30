@@ -31,16 +31,25 @@
       color: #6A7F5F;
     }
 
-    /* UNIFIED BUTTON SYSTEM */
+    /* UNIFIED BUTTON SYSTEM (RESTORED) */
     .btn-primary {
-      background: #111;        /* neutral base */
+      background: #111;
       color: white;
       border: 1px solid rgba(255,255,255,0.15);
     }
 
-    .btn-primary:hover {
-      background: #6A7F5F;     /* moss hover for home */
-      color: black;
+    /* TRAINING BUTTON HOVER — RED */
+    .btn-primary[href="/training"]:hover {
+      background: #ff3131;
+      color: white;
+    }
+
+    /* PERFORMANCE BUTTON HOVER — ORANGE */
+    .btn-primary[href="/performance"]:hover,
+    .btn-secondary[href="/performance"]:hover {
+      background: #a46348;
+      color: white;
+      border-color: #a46348;
     }
 
     .btn-secondary {
@@ -48,11 +57,7 @@
       color: white;
     }
 
-    .btn-secondary:hover {
-      border-color: #6A7F5F;
-    }
-
-    /* SOCIAL ICON HOVER */
+    /* SOCIAL ICON HOVER — MOSS */
     .icon-btn:hover {
       background: #6A7F5F;
       border-color: #6A7F5F;
@@ -68,12 +73,12 @@
       border-color: #6A7F5F;
     }
 
-    /* SECTION — MIRRORED CHAMPAGNE + MOSS */
+    /* SECTION — MIRRORED CHAMPAGNE + MOSS (SEAM FIXED) */
     .section {
       padding: 120px 0;
       background:
-        radial-gradient(circle farthest-corner at top right, rgba(106,127,95,0.22), transparent 40%),
-        radial-gradient(circle farthest-corner at bottom left, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at top right, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(106,127,95,0.22), transparent 40%),
         #0a0a0a;
     }
 
@@ -101,7 +106,7 @@
             Personal Training
           </a>
 
-          <a href="/performance" class="btn-secondary">
+          <a href="/performance" class="btn-primary">
             Performance
           </a>
         </div>
@@ -187,3 +192,4 @@
 
 </body>
 </html>
+
