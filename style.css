@@ -227,9 +227,7 @@ body {
 
 .section {
   padding: 120px 0;
-  background:
-    linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.9)),
-    var(--bg);
+  background: var(--bg);
 }
 
 
