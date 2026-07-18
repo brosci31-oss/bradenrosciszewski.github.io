@@ -25,34 +25,20 @@
       margin-bottom: 40px;
     }
 
-    /* --- Draggable Workspace --- */
+    /* --- Gallery Grid --- */
     .gallery-grid {
-      position: relative;
-      width: 100%;
-      height: 900px; /* adjustable workspace height */
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
       margin-top: 40px;
-      background: #0a0a0a;
-      overflow: hidden;
     }
 
-    /* --- Draggable Items --- */
     .gallery-item {
-      position: absolute;
-      width: 250px;
-      height: 350px;
-      border-radius: 12px;
+      position: relative;
       overflow: hidden;
+      border-radius: 12px;
       border: 1px solid rgba(255,255,255,0.15);
       background: #111;
-      cursor: grab;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .gallery-item:active {
-      cursor: grabbing;
-      box-shadow: 0 0 12px rgba(255,255,255,0.25);
     }
 
     .gallery-item img {
@@ -66,6 +52,16 @@
     .gallery-item:hover img {
       transform: scale(1.05);
       opacity: 0.85;
+    }
+
+    /* --- Placeholder Style (if no images yet) --- */
+    .placeholder-box {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 60px;
+      border-radius: 12px;
+      margin-top: 40px;
+      color: rgba(255,255,255,0.6);
     }
 
     /* --- Back Button --- */
@@ -90,77 +86,24 @@
   <div class="page-container">
     <h1>Headshots</h1>
 
-    <div class="gallery-grid" id="workspace">
-      <!-- Initial positions (you can drag them anywhere) -->
-      <div class="gallery-item" style="left: 0px; top: 0px;">
+    <!-- Replace these placeholders with your real images -->
+    <div class="gallery-grid">
+      <div class="gallery-item">
         <img src="/images/headshot1.jpg" alt="Headshot 1">
       </div>
-
-      <div class="gallery-item" style="left: 280px; top: 0px;">
+      <div class="gallery-item">
         <img src="/images/headshot2.jpg" alt="Headshot 2">
       </div>
-
-      <div class="gallery-item" style="left: 560px; top: 0px;">
+      <div class="gallery-item">
         <img src="/images/headshot3.jpg" alt="Headshot 3">
       </div>
-
-      <div class="gallery-item" style="left: 840px; top: 0px;">
+      <div class="gallery-item">
         <img src="/images/headshot4.jpg" alt="Headshot 4">
       </div>
     </div>
 
     <a href="/performance/index.html" class="btn-secondary">Back to Performance</a>
   </div>
-
-  <script>
-    const snapSize = 20; // snap grid spacing (px)
-    const items = document.querySelectorAll('.gallery-item');
-    const workspace = document.getElementById('workspace');
-
-    items.forEach(item => {
-      let offsetX = 0;
-      let offsetY = 0;
-      let isDragging = false;
-
-      item.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        offsetX = e.clientX - item.offsetLeft;
-        offsetY = e.clientY - item.offsetTop;
-      });
-
-      document.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-
-        let x = e.clientX - offsetX;
-        let y = e.clientY - offsetY;
-
-        // Keep inside workspace bounds
-        const maxX = workspace.clientWidth - item.clientWidth;
-        const maxY = workspace.clientHeight - item.clientHeight;
-
-        x = Math.max(0, Math.min(x, maxX));
-        y = Math.max(0, Math.min(y, maxY));
-
-        item.style.left = x + 'px';
-        item.style.top = y + 'px';
-      });
-
-      document.addEventListener('mouseup', () => {
-        if (!isDragging) return;
-        isDragging = false;
-
-        // Snap to nearest grid point
-        const currentX = parseInt(item.style.left);
-        const currentY = parseInt(item.style.top);
-
-        const snappedX = Math.round(currentX / snapSize) * snapSize;
-        const snappedY = Math.round(currentY / snapSize) * snapSize;
-
-        item.style.left = snappedX + 'px';
-        item.style.top = snappedY + 'px';
-      });
-    });
-  </script>
 
 </body>
 </html>
