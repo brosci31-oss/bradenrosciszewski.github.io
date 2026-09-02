@@ -15,7 +15,7 @@
       color: white;
     }
 
-    /* HERO WITH MATCHED RADIAL GRADIENT SIZE */
+    /* HERO — BLUE TOP LEFT → RED BOTTOM RIGHT */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -58,6 +58,56 @@
       border-color: #72ccff;
     }
 
+    /* ⭐ TESTIMONIALS — RED TOP RIGHT → BLUE BOTTOM LEFT */
+    .testimonials {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top right, rgba(255,49,49,0.08), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(114,204,255,0.08), transparent 40%),
+        #0a0a0a;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .testimonial-card {
+      background: #111111;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 32px;
+      transition: border-color 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      border-color: #72ccff;
+    }
+
+    .quote {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 20px;
+    }
+
+    .author {
+      font-weight: bold;
+      color: #72ccff;
+      font-size: 1rem;
+    }
+
+    /* ⭐ PRICING — BLUE TOP LEFT → RED BOTTOM RIGHT */
+    .section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top left, rgba(114,204,255,0.08), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(255,49,49,0.08), transparent 40%),
+        #0a0a0a;
+    }
+
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -90,21 +140,13 @@
       margin-bottom: 30px;
     }
 
-    /* ⭐ MATCHED RADIAL GRADIENT SIZE FOR SECTION */
-    .section {
-      padding: 120px 0;
-      background:
-        radial-gradient(circle farthest-corner at top right, rgba(255,49,49,0.08), transparent 40%),
-        radial-gradient(circle farthest-corner at bottom left, rgba(114,204,255,0.08), transparent 40%),
-        #0a0a0a;
-    }
-
   </style>
 
 </head>
 
 <body>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-content">
 
@@ -140,42 +182,45 @@
 
     </div>
   </section>
-<section class="section testimonials">
-  <div class="container">
 
-    <h2 class="section-title">Client Testimonials</h2>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
 
-    <div class="testimonials-grid">
+      <h2 class="section-title">Client Testimonials</h2>
 
-      <div class="testimonial-card">
-        <p class="quote">
-          “Braden’s coaching completely changed how I approach strength training.
-          I feel stronger, more confident, and more disciplined than ever.”
-        </p>
-        <div class="author">— Alex M.</div>
-      </div>
+      <div class="testimonials-grid">
 
-      <div class="testimonial-card">
-        <p class="quote">
-          “The accountability and structure were exactly what I needed.
-          Every session pushed me, and the results speak for themselves.”
-        </p>
-        <div class="author">— Jordan S.</div>
-      </div>
+        <div class="testimonial-card">
+          <p class="quote">
+            “Braden’s coaching completely changed how I approach strength training.
+            I feel stronger, more confident, and more disciplined than ever.”
+          </p>
+          <div class="author">— Alex M.</div>
+        </div>
 
-      <div class="testimonial-card">
-        <p class="quote">
-          “I’ve worked with trainers before, but none with Braden’s level of detail,
-          intention, and care. Highly recommend.”
-        </p>
-        <div class="author">— Taylor R.</div>
+        <div class="testimonial-card">
+          <p class="quote">
+            “The accountability and structure were exactly what I needed.
+            Every session pushed me, and the results speak for themselves.”
+          </p>
+          <div class="author">— Jordan S.</div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">
+            “I’ve worked with trainers before, but none with Braden’s level of detail,
+            intention, and care. Highly recommend.”
+          </p>
+          <div class="author">— Taylor R.</div>
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
-
+  <!-- PRICING -->
   <section class="section" id="pricing">
 
     <div class="container">
@@ -186,7 +231,6 @@
 
       <div class="pricing-grid">
 
-        <!-- ORIGINAL 3 CARDS -->
         <div class="pricing-card">
           <h3>Consultation</h3>
           <div class="price">Free</div>
@@ -217,27 +261,32 @@
           <a href="https://buy.stripe.com/eVqfZhbu2eoHgxe01q8k80k" class="btn btn-primary">Start Coaching</a>
         </div>
 
-        <!-- NEW 3 CARDS -->
         <div class="pricing-card">
           <h3>45 Minute Session</h3>
           <div class="price">$120</div>
-          <p> Personalized coaching session focused on movement,
-            strength, conditioning, and performance.</p>
+          <p>
+            Personalized coaching session focused on movement,
+            strength, conditioning, and performance.
+          </p>
           <a href="https://buy.stripe.com/28E6oH41Aa8r4OwdSg8k80h" class="btn btn-primary">Purchase Session</a>
         </div>
 
         <div class="pricing-card">
           <h3>30 Minute Session</h3>
           <div class="price">$100</div>
-          <p> Personalized coaching session focused on movement,
-            strength, conditioning, and performance.</p>
+          <p>
+            Personalized coaching session focused on movement,
+            strength, conditioning, and performance.
+          </p>
           <a href="https://buy.stripe.com/cNi9ATapY94n6WEg0o8k80i" class="btn btn-primary">Purchase Session</a>
         </div>
 
         <div class="pricing-card">
           <h3>Monthly Unlimited</h3>
           <div class="price">$1299</div>
-          <p>All the benefits of monthly coaching PLUS up to 5 days of training sessions per week.</p>
+          <p>
+            All the benefits of monthly coaching PLUS up to 5 days of training sessions per week.
+          </p>
           <a href="https://buy.stripe.com/cNiaEX0Po5Sbep629y8k80j" class="btn btn-primary">Start Coaching</a>
         </div>
 
@@ -254,4 +303,3 @@
 
 </body>
 </html>
-
