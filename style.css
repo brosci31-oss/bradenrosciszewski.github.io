@@ -327,3 +327,43 @@ footer {
   }
 }
 
+/* TESTIMONIALS SECTION — flipped pattern */
+.testimonials {
+  padding: 120px 0;
+  background:
+    radial-gradient(circle farthest-corner at top right, rgba(255,49,49,0.08), transparent 40%),
+    radial-gradient(circle farthest-corner at bottom left, rgba(114,204,255,0.08), transparent 40%),
+    #0a0a0a;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: #111111;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 32px;
+  transition: border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: #72ccff;
+}
+
+.quote {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+  color: #72ccff;
+  font-size: 1rem;
+}
