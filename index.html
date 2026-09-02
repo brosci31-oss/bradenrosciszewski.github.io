@@ -40,11 +40,49 @@
         #0a0a0a;
     }
 
+    /* ABOUT SECTION */
+    .about-section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top left, rgba(247,231,206,0.18), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(106,127,95,0.18), transparent 40%),
+        #0a0a0a;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .about-block {
+      margin-bottom: 40px;
+    }
+
+    .about-block h3 {
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+      color: #F7E7CE;
+    }
+
+    .about-block p {
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-content">
 
@@ -112,6 +150,57 @@
     </div>
   </section>
 
+  <!-- NEW ABOUT SECTION -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- LEFT: PHOTO -->
+        <div class="about-photo">
+          <img src="/images/about-photo.jpg" alt="About Braden">
+        </div>
+
+        <!-- RIGHT: TEXT BLOCKS -->
+        <div>
+
+          <div class="about-block">
+            <h3>Biography</h3>
+            <p>
+              Braden has been studying acting for seven years and voice for four years. He began acting as a freshman in undergrad and adopted a theatre minor shortly thereafter. While a student, Braden participated in 15 productions at his institution, learning how to act for the stage and camera. He has studied Stanislavski, Chekhov, Laban, Linklater, and Meisner, as well as period style work from Greek to Elizabethan and Restoration comedy.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3>Unique Opportunities</h3>
+            <p>
+              Braden had the opportunity to perform onstage with Kristin Chenoweth, Martin Short, Melissa Errico, and Cheyenne Jackson. He participated in master classes with Bryan Terrell Clark, Jessica Vosk, and Gavin Creel, and completed two week‑long musical theatre workshops with Tony Award‑winning actress Betty Buckley.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3>Artistic Statement</h3>
+            <p>
+              Braden believes deeply in the value of hard work, echoing John Cage’s sentiment: “The only rule is work. If you work it will lead to something.” He embraces ensemble‑driven creativity, the collaborative nature of theatre, and the joy found in the process itself. He strives for playfulness, curiosity, and freedom in his work.
+            </p>
+            <p>
+              In his free time, Braden enjoys literature, music, film, making videos, playing games with friends, and spending time with his wife, Tori.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3>Mission</h3>
+            <p>
+              To create meaningful art that is true to himself and capable of inspiring the world and instilling change.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I DO -->
   <section class="section">
     <div class="container">
 
@@ -150,5 +239,3 @@
 
 </body>
 </html>
-
-
