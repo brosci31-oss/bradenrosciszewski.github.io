@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software Design | Braden Rosciszewski</title>
+
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+
+    /* BASE */
+    body {
+      background: #0a0a0a;
+      color: white;
+    }
+
+    /* HERO — CHAMPAGNE TOP LEFT → MOSS BOTTOM RIGHT */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle farthest-corner at top left, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(106,127,95,0.22), transparent 40%),
+        #0a0a0a;
+    }
+
+    .accent {
+      color: #6A7F5F;
+    }
+
+    .btn-primary {
+      background: #6A7F5F;
+      color: black;
+    }
+
+    .btn-primary:hover {
+      background: #F7E7CE;
+      color: black;
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #6A7F5F;
+    }
+
+    /* ABOUT SECTION — MOSS TOP RIGHT → CHAMPAGNE BOTTOM LEFT */
+    .about-section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top right, rgba(106,127,95,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom left, rgba(247,231,206,0.22), transparent 40%),
+        #0a0a0a;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .about-block {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-block h3 {
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+      color: #F7E7CE;
+    }
+
+    .about-block p {
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* SERVICES SECTION — CHAMPAGNE TOP LEFT → MOSS BOTTOM RIGHT */
+    .section {
+      padding: 120px 0;
+      background:
+        radial-gradient(circle farthest-corner at top left, rgba(247,231,206,0.22), transparent 40%),
+        radial-gradient(circle farthest-corner at bottom right, rgba(106,127,95,0.22), transparent 40%),
+        #0a0a0a;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: #111;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 40px;
+      transition: border-color 0.3s ease;
+    }
+
+    .service-card:hover {
+      border-color: #6A7F5F;
+    }
+
+    .service-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: #F7E7CE;
+    }
+
+    .service-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+
+      <div class="hero-text">
+        <h1>
+          Software<br>
+          <span class="accent">Design</span>
+        </h1>
+
+        <p>
+          Clean, intentional, user‑centered digital experiences built with clarity,
+          structure, and modern design principles.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">
+            View Services
+          </a>
+
+          <a href="/" class="btn btn-secondary">
+            Back Home
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="/images/software.jpg" alt="Software Design">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SOFTWARE WORK -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- LEFT: IMAGE -->
+        <div class="about-photo">
+          <img src="/images/software2.jpg" alt="Software Work">
+        </div>
+
+        <!-- RIGHT: TEXT -->
+        <div>
+
+          <div class="about-block">
+            <h3>Philosophy</h3>
+            <p>
+              I believe software should feel intuitive, elegant, and purposeful.
+              My work blends design, structure, and user psychology to create
+              digital experiences that feel effortless.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3>Approach</h3>
+            <p>
+              Every project begins with understanding the user — their goals,
+              their frustrations, and the environment they operate in. From there,
+              I build systems that are clean, scalable, and visually cohesive.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h3>Tools & Expertise</h3>
+            <p>
+              UI/UX design, prototyping, front‑end development, system architecture,
+              workflow optimization, and product strategy.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+
+      <h2 class="section-title">
+        Services
+      </h2>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>
+            Clean, modern interfaces built around clarity, usability,
+            and visual hierarchy.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Front‑End Development</h3>
+          <p>
+            Responsive, accessible, and performance‑focused builds
+            using modern web standards.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Workflow Systems</h3>
+          <p>
+            Custom dashboards, automation tools, and internal systems
+            designed to streamline operations.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Product Strategy</h3>
+          <p>
+            Structure, planning, and design direction for new products,
+            features, and digital experiences.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Braden Rosciszewski
+    </div>
+  </footer>
+
+</body>
+</html>
