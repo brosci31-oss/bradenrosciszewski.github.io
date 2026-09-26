@@ -367,3 +367,12 @@ footer {
   color: #72ccff;
   font-size: 1rem;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #a46348;
+}
+
